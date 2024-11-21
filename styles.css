@@ -14,10 +14,20 @@ body {
     height: 100vh;
 }
 
-.container {
+.flex-container {
+    display: flex; /* Utilise Flexbox pour aligner les conteneurs côte à côte */
+    justify-content: space-between; /* Pour ajouter de l'espace entre les conteneurs */
+    max-width: 1000px; /* Ajustez la largeur maximale si nécessaire */
+    margin: 0 auto; /* Centrer le conteneur parent */
+}
+
+.container_normal, .container_gold {
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; /* Vous pouvez ajuster la largeur si nécessaire */
+    margin: 10px; /* Marge autour des conteneurs */
+    padding: 20px; /* Remplissage à l'intérieur des conteneurs */
+    background-color: #f9f9f9; /* Couleur de fond des conteneurs */
+    border: 1px solid #ccc; /* Bordure autour des conteneurs */
 }
 
 h1 {
