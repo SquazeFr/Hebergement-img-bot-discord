@@ -11,6 +11,27 @@
     cff
 </div>
 <body>
+    <div>
+        <input type="text" id="searchInput" placeholder="Recherche une carte ici">
+        <button onclick="searchImage()">Rechercher</button>
+    </div>
+    <div class="flex-container">
+<script src="script.js"></script>
+<script>
+function searchImage() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const headings = document.querySelectorAll('h3');
+    for (let heading of headings) {
+        if (heading.textContent.toLowerCase().includes(input)) {
+            heading.scrollIntoView({ behavior: 'smooth' });
+            break;
+        }
+    }
+}
+</script>
+
+</head>
+<body>
     <div class="flex-container">
         <h1>Liste des Images Normales</h1>
         <div class="card-container">
