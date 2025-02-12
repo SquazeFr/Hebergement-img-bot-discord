@@ -11,19 +11,28 @@ body {
     min-height: 100vh;
 }
 .header{
+    padding-top: 5px ;
+    padding-bottom: 5px ;
     background-color: #21212E;
+    display: flex;
+    justify-content: center;
+}
+.header img{
+    width: 30%;
+	height: auto;
 }
 .search-container {
     display: flex;
+    margin-top: 10px;
     justify-content: center; /* Center the search bar horizontally */
-    margin-bottom: 20px; /* Space below the search bar */
+    margin-bottom: 10px; /* Space below the search bar */
 }
 
 #searchInput {
     padding: 10px;
     border: 1px solid #21212E;
     border-radius: 5px;
-    width: 300px; /* Adjust width as needed */
+    width: 400px; /* Adjust width as needed */
     margin-right: 10px; /* Space between input and button */
 }
 
@@ -107,7 +116,6 @@ h3 {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-bottom: 2px solid #ddd;
     transition: transform 0.3s ease;
 }
 
@@ -122,7 +130,7 @@ h3 {
 
 .card h3 {
     margin: 0 0;
-    font-size: 1rem;
+    font-size: 0.75rem;
     color: #2c3e50;
 }
 
@@ -148,8 +156,9 @@ footer {
 /* Styles for the search bar */
 .search-container {
     display: flex;
+    margin-top: 10px;
     justify-content: center; /* Center the search bar horizontally */
-    margin-bottom: 20px; /* Space below the search bar */
+    margin-bottom: 10px; /* Space below the search bar */
 }
 
 #searchInput {
